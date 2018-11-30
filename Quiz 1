@@ -1,0 +1,20 @@
+There are many arguments against using the decision tree with the given information.
+Thus, even though the model has 83.7% accuracy we can not be sure that we can or should trust and use the model.
+
+1. The ranking of the decision tree is driven by Gini coefficient or Entropy. 
+Neither Gini nor Entropy has any scientific proof to be based on.
+
+2.The decision tree is not evaluated on the whole dataset, that is every variaible is ranked independently 
+while depending on the previous instances.Every variable in the tree is forced to interact with every variable further up the tree.
+
+3. The accuracy of the variables is unknown. 
+There is no information about the variables that have been used in analyzing the decision tree model.
+
+4. The desision tree is non-parametric that is the model can not be interpreted using P values or betas.
+As a result the probabilites of any poseible outcome can not be generated.
+
+5. At each level, tree looks for binary split. This is a greedy algorithm and achieves only local optima.
+
+6. Last but not least, there is a problem with overfitting. 
+The model can work with only this given dataset while have large variance with other dataset.
+The achived number can not be used as general outcome for all datasets.
