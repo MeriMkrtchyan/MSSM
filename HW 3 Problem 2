@@ -1,0 +1,14 @@
+Raymond Reddington (known as well as Red) is a data scientist who aims to predict whether a given individual will
+conduct another crime or not, based on his/her criminal behavior history. He is using a basic Classification and
+Regression Tree (CART) algorithm, which achieves 74.56% ROC AUC on the training set and only 59.83% ROC AUC
+on the test set. What would you advice Mr. Red to do to improve his model performance? Please, provide at least
+3 recommendations with grounded explanation.
+
+Sample Answer
+I would recommend Red to:
+1. Tune the tree, if he has not done so yet (or tune more with larger set of parameters), as it clearly overfits
+the Train set. Probably he has not tuned, as the text suggest that his tree is basic.
+2. Assuming that basic tree uses default parameters, I would suggest to balance the classes. If data is
+unbalanced (which probably should be the case of criminal data), then ROC AUC score will suffer from it.
+3. Last but not least, I would recommend to use simpler model such as Logistic Regression, as it is less
+probably to overfit and easier to tune than the tree.
